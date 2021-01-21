@@ -26,9 +26,7 @@ async function convert (input, canvas, result) {
   const ctx = canvas.getContext('2d')
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   ctx.drawImage(img, 0, 0)
-  ctx.drawImage(img, 0, 32, 16, 16, 0, 16, 16, 16)
-  ctx.drawImage(img, 16, 32, 24, 24, 16, 16, 24, 24)
-  ctx.drawImage(img, 40, 32, 16, 16, 40, 16, 16, 16)
+  ctx.drawImage(img, 0, 32, 56, 16, 0, 16, 56, 16)
 
   result.src = canvas.toDataURL('image/png')
 }
